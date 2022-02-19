@@ -8,9 +8,7 @@
 </head>
 
 <body class="home-template" style="margin: 0; height: 100%;">
-    <bkg>
-        <img src="/PlasticPET-graphicx/css/bkg.jpg"></img>
-    </bkg>
+    <div class="bkg"></div>
     <div class="container">
 
         <div style="overflow:hidden;">
@@ -145,6 +143,8 @@
 
                 </details>
                 <h3 id="KNN-">3-KNN</h3>
+                <li>Note Time of Flight error is
+                    <sqrt>2</sqrt>*KNN Time error, as the KNN operates on single Arrays, and is for single gammas.</li>
                 <h4 id="Valid">Validation</h4>
                 <details>
                     <summary>Details</summary>
@@ -189,7 +189,7 @@
                     </div>
                 </details>
                 <h4 id="PSQE0">Point Source with Quantum Efficiency / PDE</h4>
-                <details>
+                <details open>
                     <summary>Details</summary>
                     <li>The histogram is a light-yield histogram binned by z-position (axial).</li>
                     <li>The right reconstruction has been NLM (non-local-means) filtered.</li>
@@ -202,8 +202,19 @@
                         <img src="3-KNN/PSQE0/renderArt.png" alt="">
                         <img src="3-KNN/PSQE0/renderArt_NLM.png" alt="">
                     </div>
+                    <div class="special">
+                        <img src="3-KNN/PSQE0/renderArt_art.png" alt="">
+                    </div>
+                </details>
+                <h3 id="Test-">4-Gamma Only Simulation (Test in <code>Python</code>)</h3>
+                <details>
+                    <summary>Details</summary>
+                    <li>Direct generation and reconstruction of gamma.</li>
+                    <li>First we have the full render, then gamma interaction positions, then the lines of response and lines of response center points.</li>
                     <div>
-                        <img src="3-KNN/PSQE0/renderArt_art.png" width=80vw alt="">
+                        <img src="4-Test/renderI.png" alt="">
+                        <img src="4-Test/renderI_centers.png" alt="">
+                        <img src="4-Test/renderI_points.png" alt="">
                     </div>
                 </details>
             </div>

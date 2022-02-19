@@ -4,16 +4,21 @@
 
 img {
     /* float: left !important; */
-    max-width: 200px !important;
-    max-height: 200px !important;
-    object-fit: cover !important;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.special>img {
+    max-width: 80vw !important;
+    max-height: 80vh !important;
 }
 
 img:hover {
     /* float: left !important; */
-    max-width: 80vw !important;
-    max-height: 80vh !important;
-    object-fit: cover !important;
+    max-width: 80vw;
+    max-height: 80vh;
+    object-fit: cover;
 }
 
 :root {
@@ -45,12 +50,12 @@ html {
     height: 100%!important;
     margin: 0;
     padding: 0;
-    background: var(--aijiro-alph) !important;
+    background: transparent !important;
     /*#e7ecf7!important;*/
     font-family: var(--kotoba);
 }
 
-bkg>img {
+.bkg {
     margin: 0;
     padding: 0;
     top: 0px;
@@ -67,7 +72,7 @@ bkg>img {
     filter: brightness(0.5) contrast(2) invert(1) hue-rotate(-30deg);
 }
 
-bkg {
+.bkg {
     margin: 0 auto;
 }
 
