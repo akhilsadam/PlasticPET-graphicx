@@ -7,84 +7,90 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 </head>
 
-<body class="card" style="margin: 0; height: 100%;">
-    <h1 class="site-title" id="plasticpet-selected-plots">PlasticPET Selected Plots</h1>
-    <ul>
-        <li>*Some plots have very poor statistics, but I haven&#39;t yet had a chance to regenerate them... </li>
-        <li>If you would like to use those, please tell me, and I will generate them ASAP (will take a day or two, since simulation is fairly slow).</li>
-        <li>Some images are hidden by a dropdown, since they are not directly relevant, but are needed to show full progression. </li>
-    </ul>
-    <p><a href="https://github.com/akhilsadam/PlasticPET-graphicx/archive/refs/heads/main.zip">Download as ZIP</a></p>
-    <link type="text/css" rel="stylesheet" src="https://raw.githubusercontent.com/akhilsadam/PlasticPET-graphicx/gh-pages/styles.css" />
+<body class="home-template" style="margin: 0; height: 100%;">
+    <div class="container">
 
-    <h2 id="setup">SETUP</h2>
-    <h3 id="geometry">Geometry</h3>
-    <ul>
-        <li>I am assuming Mr. Proga has supplied this to satisfaction... </li>
-    </ul>
-    <h3 id="cross-section-material-definition">Cross-Section &amp; Material Definition</h3>
-    <ul>
-        <li>EJ208 &amp; SiPM Response</li>
-    </ul>
-    <p><img src="0-CrossSection/EJ208.png" alt=""> <img src="0-CrossSection/SiPM.jpg" alt=""></p>
-    <ul>
-        <li>Geant4 Implementation of Polyvinyltoulene (PVT) against NIST standards: </li>
-    </ul>
-    <p><img src="0-CrossSection/PVT_G4_VS_NIST_CS.png" alt=""> <img src="0-CrossSection/PVT_G4_VS_NIST_L.png" alt=""> </p>
-    <ul>
-        <li>Geant4 Implementation of EJ208 (addition of Pb) against NIST standards: </li>
-    </ul>
-    <p><img src="0-CrossSection/PVT_G4_W_Pb_CS.png" alt=""> <img src="0-CrossSection/PVT_G4_W_Pb_L.png" alt=""> </p>
-    <h3 id="primitives">Primitives</h3>
-    <ul>
-        <li>Example Creation/Production &amp; Detection Plots; to motivate looking at sum histograms.</li>
-    </ul>
-    <p><img src="1-Primitives/Creation.png" alt=""> <img src="1-Primitives/Detection.png" alt=""> </p>
-    <h3 id="surface-treatment-">Surface Treatment*</h3>
-    <h4 id="light-yield-across-varying-plastic-roughness-motivate-using-polished-crystal">Light Yield across Varying Plastic Roughness | Motivate using Polished Crystal</h4>
-    <ul>
-        <li>VK_sigmaalpha = 12 degrees, EJ_sigmaalpha = <code>[2deg, 12deg]</code> respectively. These values are from a previous G4 paper that used them to discriminate between rough and polished surfaces.</li>
-    </ul>
-    <p><img src="2-Surfaces/EJVK-2-12.png" alt=""> <img src="2-Surfaces/EJVK-12-12.png" alt=""> </p>
-    <ul>
-        <li>VK_sigmaalpha = 0.0001, EJ_sigmaalpha = <code>[0.0001,1.3deg,4deg,6deg,8deg,12deg,30deg]</code> respectively. All with 200 events. Note EJ208 is set at 100% reflectivity specially for these tests! VK reflectivity is as measured. </li>
-    </ul>
-    <details>
-        <summary>Images</summary><br>
+        <div style="overflow:hidden;">
+            <div class="card">
+                <h1 class="site-title" id="plasticpet-selected-plots">PlasticPET Selected Plots</h1>
+                <ul>
+                    <li>*Some plots have very poor statistics, but I haven&#39;t yet had a chance to regenerate them... </li>
+                    <li>If you would like to use those, please tell me, and I will generate them ASAP (will take a day or two, since simulation is fairly slow).</li>
+                    <li>Some images are hidden by a dropdown, since they are not directly relevant, but are needed to show full progression. </li>
+                </ul>
+                <p><a href="https://github.com/akhilsadam/PlasticPET-graphicx/archive/refs/heads/main.zip">Download as ZIP</a></p>
+                <h2 id="setup">SETUP</h2>
+                <h3 id="geometry">Geometry</h3>
+                <ul>
+                    <li>I am assuming Mr. Proga has supplied this to satisfaction... </li>
+                </ul>
+                <h3 id="cross-section-material-definition">Cross-Section &amp; Material Definition</h3>
+                <ul>
+                    <li>EJ208 &amp; SiPM Response</li>
+                </ul>
+                <p><img src="0-CrossSection/EJ208.png" alt=""> <img src="0-CrossSection/SiPM.jpg" alt=""></p>
+                <ul>
+                    <li>Geant4 Implementation of Polyvinyltoulene (PVT) against NIST standards: </li>
+                </ul>
+                <p><img src="0-CrossSection/PVT_G4_VS_NIST_CS.png" alt=""> <img src="0-CrossSection/PVT_G4_VS_NIST_L.png" alt=""> </p>
+                <ul>
+                    <li>Geant4 Implementation of EJ208 (addition of Pb) against NIST standards: </li>
+                </ul>
+                <p><img src="0-CrossSection/PVT_G4_W_Pb_CS.png" alt=""> <img src="0-CrossSection/PVT_G4_W_Pb_L.png" alt=""> </p>
+                <h3 id="primitives">Primitives</h3>
+                <ul>
+                    <li>Example Creation/Production &amp; Detection Plots; to motivate looking at sum histograms.</li>
+                </ul>
+                <p><img src="1-Primitives/Creation.png" alt=""> <img src="1-Primitives/Detection.png" alt=""> </p>
+                <h3 id="surface-treatment-">Surface Treatment*</h3>
+                <h4 id="light-yield-across-varying-plastic-roughness-motivate-using-polished-crystal">Light Yield across Varying Plastic Roughness | Motivate using Polished Crystal</h4>
+                <ul>
+                    <li>VK_sigmaalpha = 12 degrees, EJ_sigmaalpha = <code>[2deg, 12deg]</code> respectively. These values are from a previous G4 paper that used them to discriminate between rough and polished surfaces.</li>
+                </ul>
+                <p><img src="2-Surfaces/EJVK-2-12.png" alt=""> <img src="2-Surfaces/EJVK-12-12.png" alt=""> </p>
+                <ul>
+                    <li>VK_sigmaalpha = 0.0001, EJ_sigmaalpha = <code>[0.0001,1.3deg,4deg,6deg,8deg,12deg,30deg]</code> respectively. All with 200 events. Note EJ208 is set at 100% reflectivity specially for these tests! VK reflectivity is as measured. </li>
+                </ul>
+                <details>
+                    <summary>Images</summary><br>
 
-        <img src="2-Surfaces/EJVK-0.0001.png" alt="">
-        <img src="2-Surfaces/EJVK-1.3-0.0001.png" alt=""><br>
-        <img src="2-Surfaces/EJVK-4-0.0001.png" alt="">
-        <img src="2-Surfaces/EJVK-6-0.0001.png" alt=""><br>
-        <img src="2-Surfaces/EJVK-8-0.0001.png" alt="">
-        <img src="2-Surfaces/EJVK-12-0.0001.png" alt=""><br>
-        <img src="2-Surfaces/EJVK-30-0.0001.png" alt=""><br>
+                    <img src="2-Surfaces/EJVK-0.0001.png" alt="">
+                    <img src="2-Surfaces/EJVK-1.3-0.0001.png" alt=""><br>
+                    <img src="2-Surfaces/EJVK-4-0.0001.png" alt="">
+                    <img src="2-Surfaces/EJVK-6-0.0001.png" alt=""><br>
+                    <img src="2-Surfaces/EJVK-8-0.0001.png" alt="">
+                    <img src="2-Surfaces/EJVK-12-0.0001.png" alt=""><br>
+                    <img src="2-Surfaces/EJVK-30-0.0001.png" alt=""><br>
 
-    </details>
+                </details>
 
-    <ul>
-        <li>EJ &amp; VK_sigmaalpha = <code>[1.3deg, 12deg]</code>, respectively. </li>
-    </ul>
-    <details>
-        <summary>Images</summary><br>
+                <ul>
+                    <li>EJ &amp; VK_sigmaalpha = <code>[1.3deg, 12deg]</code>, respectively. </li>
+                </ul>
+                <details>
+                    <summary>Images</summary><br>
 
-        <img src="2-Surfaces/EJVK-1.3.png" alt="">
-        <img src="2-Surfaces/EJVK-12.png" alt=""><br>
-
-
-    </details>
-
-    <h4 id="reflection-suite">Reflection Suite</h4>
-    <details>
-        <summary>Images</summary>
+                    <img src="2-Surfaces/EJVK-1.3.png" alt="">
+                    <img src="2-Surfaces/EJVK-12.png" alt=""><br>
 
 
+                </details>
 
-        # TODO
+                <h4 id="reflection-suite">Reflection Suite</h4>
+                <details>
+                    <summary>Images</summary>
 
 
 
-    </details>
+                    # TODO
+
+
+
+                </details>
+            </div>
+        </div>
+
+    </div>
 </body>
 
 </html>

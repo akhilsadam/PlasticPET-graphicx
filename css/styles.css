@@ -8,6 +8,7 @@ max-width: 25%;
 :root {
     --kotoba: Kiona, Aron Grotesque Light, Montserrat Regular;
     --aijiro: rgba(235, 246, 247, 1);
+    --aijiro-alph: rgba(235, 246, 247, 0.15);
     --sukaitsuri-iro: rgb(220, 240, 250);
     /* skytree white not accurate */
     --mashiro: rgb(255, 255, 255);
@@ -32,7 +33,7 @@ html {
     height: 100%!important;
     margin: 0;
     padding: 0;
-    background: var(--aijiro) !important;
+    background: var(--aijiro-alph) !important;
     /*#e7ecf7!important;*/
     font-family: var(--kotoba);
 }
