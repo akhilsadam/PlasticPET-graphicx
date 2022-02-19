@@ -19,7 +19,7 @@ img:hover {
 :root {
     --kotoba: Kiona, Aron Grotesque Light, Montserrat Regular;
     --aijiro: rgba(235, 246, 247, 1);
-    --aijiro-alph: rgba(235, 246, 247, 0.15);
+    --aijiro-alph: rgba(235, 246, 247, 0.05);
     --sukaitsuri-iro: rgb(220, 240, 250);
     /* skytree white not accurate */
     --mashiro: rgb(255, 255, 255);
@@ -36,6 +36,7 @@ img:hover {
     --tetsuonando: rgb(43, 55, 54);
     --sakuranezumi: rgb(172, 129, 118);
     --ginshu: rgb(188, 45, 41);
+    --enji-iro: rgb(157, 41, 51);
     --azuki-iro: rgb(103, 36, 34);
 }
 
@@ -47,6 +48,27 @@ html {
     background: var(--aijiro-alph) !important;
     /*#e7ecf7!important;*/
     font-family: var(--kotoba);
+}
+
+bkg>img {
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: 200% 200%;
+    z-index: -100;
+    background: url("/PlasticPET-graphicx/css/bkg.jpg");
+    border: none;
+    filter: brightness(0.5) contrast(2) invert(1) hue-rotate(-30deg);
+}
+
+bkg {
+    margin: 0 auto;
 }
 
 .row .col {
@@ -91,12 +113,17 @@ header .nav-wrapper a {
     margin: 0!important;
 }
 
-details {
+details,
+.site-title {
     text-align: center;
 }
 
 li {
     text-align: left;
+}
+
+h2 {
+    color: var(--enji-iro);
 }
 
 .home-template .card {

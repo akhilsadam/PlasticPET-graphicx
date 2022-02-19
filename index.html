@@ -8,15 +8,21 @@
 </head>
 
 <body class="home-template" style="margin: 0; height: 100%;">
+    <bkg>
+        <img src="/PlasticPET-graphicx/css/bkg.jpg"></img>
+    </bkg>
     <div class="container">
 
         <div style="overflow:hidden;">
             <div class="card">
-                <h1 class="site-title" id="plasticpet-selected-plots">PlasticPET Selected Plots</h1>
+                <h1 class="site-title" id="plasticpet-selected-plots">PlasticPET - Selected Plots</h1>
                 <ul>
-                    <li>*Some plots have very poor statistics, but I haven&#39;t yet had a chance to regenerate them... </li>
+                    <li>(*) Some plots have very poor statistics, but I haven&#39;t yet had a chance to regenerate them... </li>
                     <li>If you would like to use those, please tell me, and I will generate them ASAP (will take a day or two, since simulation is fairly slow).</li>
-                    <li>Some images are hidden by a dropdown, since they are not directly relevant, but are needed to show full progression. </li>
+                    <li>I'm not sure how detailed of a presentation you plan to make, so I focused on a consise but comprehensive set.</li>
+                    <li>With that said, the entire Surface Treatment section can be ignored, and showing all the validation plots on KNN & Reconstruction would be excessive.</li>
+                    <li>All plots which mention <i>2 degrees</i> really mean around 1.3 degrees (the G4 polished value), I just rounded up the number when presenting.</li>
+                    <li>All reconstructions need to be prequalified : <b>there is a known TOF bug</b> decreasing the available resolution</li>
                     <li>Hover over images to see full size (limited by screen size).</li>
                 </ul>
                 <p><a href="https://github.com/akhilsadam/PlasticPET-graphicx/archive/refs/heads/main.zip">Download as ZIP</a></p>
@@ -25,33 +31,39 @@
                 <ul>
                     <li>I am assuming Mr. Proga has supplied this to satisfaction... </li>
                 </ul>
-                <h3 id="cross-section-material-definition">Cross-Section &amp; Material Definition</h3>
-                <ul>
-                    <li>EJ208 &amp; SiPM Response</li>
-                </ul>
-                <div>
-                    <img src="0-CrossSection/EJ208.png" alt=""> <img src="0-CrossSection/SiPM.jpg" alt="">
-                </div>
-                <ul>
-                    <li>Geant4 Implementation of Polyvinyltoulene (PVT) against NIST standards: </li>
-                </ul>
-                <div>
-                    <img src="0-CrossSection/PVT_G4_VS_NIST_CS.png" alt=""> <img src="0-CrossSection/PVT_G4_VS_NIST_L.png" alt="">
-                </div>
-                <ul>
-                    <li>Geant4 Implementation of EJ208 (addition of Pb) against NIST standards: </li>
-                </ul>
-                <div>
-                    <img src="0-CrossSection/PVT_G4_W_Pb_CS.png" alt=""> <img src="0-CrossSection/PVT_G4_W_Pb_L.png" alt="">
-                </div>
-                <h3 id="primitives">Primitives</h3>
-                <ul>
-                    <li>Example Creation/Production &amp; Detection Plots; to motivate looking at sum histograms.</li>
-                </ul>
-                <div>
-                    <img src="1-Primitives/Creation.png" alt=""> <img src="1-Primitives/Detection.png" alt="">
-                </div>
-                <h3 id="surface-treatment-">Surface Treatment*</h3>
+                <h3 id="cross-section-material-definition">0-Cross-Section &amp; Material Definition</h3>
+                <details>
+                    <summary>Details</summary>
+                    <ul>
+                        <li>EJ208 &amp; SiPM Response</li>
+                    </ul>
+                    <div>
+                        <img src="0-CrossSection/EJ208.png" alt=""> <img src="0-CrossSection/SiPM.jpg" alt="">
+                    </div>
+                    <ul>
+                        <li>Geant4 Implementation of Polyvinyltoulene (PVT) against NIST standards: </li>
+                    </ul>
+                    <div>
+                        <img src="0-CrossSection/PVT_G4_VS_NIST_CS.png" alt=""> <img src="0-CrossSection/PVT_G4_VS_NIST_L.png" alt="">
+                    </div>
+                    <ul>
+                        <li>Geant4 Implementation of EJ208 (addition of Pb) against NIST standards: </li>
+                    </ul>
+                    <div>
+                        <img src="0-CrossSection/PVT_G4_W_Pb_CS.png" alt=""> <img src="0-CrossSection/PVT_G4_W_Pb_L.png" alt="">
+                    </div>
+                </details>
+                <h3 id="primitives">1-Primitives</h3>
+                <details>
+                    <summary>Details</summary>
+                    <ul>
+                        <li>Example Creation/Production &amp; Detection Plots; to motivate looking at sum histograms.</li>
+                    </ul>
+                    <div>
+                        <img src="1-Primitives/Creation.png" alt=""> <img src="1-Primitives/Detection.png" alt="">
+                    </div>
+                </details>
+                <h3 id="surface-treatment-">2-Surface Treatment (*)</h3>
                 <h4 id="light-yield-across-varying-plastic-roughness-motivate-using-polished-crystal">Light Yield across Varying Plastic Roughness | Motivate using Polished Crystal</h4>
                 <details>
                     <summary>Details</summary>
@@ -113,8 +125,38 @@
                         <img src="2-Surfaces/RSA-EJ.png" alt="">
                     </div>
 
+                    <li>SigmaAlpha Summaries.</li>
+                    <div>
+                        <img src="2-Surfaces/SAS-1.jpg" alt="">
+                        <img src="2-Surfaces/SAS-2.jpg" alt="">
+                        <img src="2-Surfaces/SAS-3.jpg" alt="">
+                        <img src="2-Surfaces/SAS-4.jpg" alt="">
+                        <img src="2-Surfaces/SAS-5.jpg" alt="">
+                    </div>
+
+                    <li>Travel Protocol : number of surface interactions vs boundary time.</li>
+                    <li>SigmaAlpha is varied : <code>(EJ,VK) = [(1.3,1.3),(1.3,12),(12,1.3),(12,12)].</code></li>
+                    <div>
+                        <img src="2-Surfaces/alpha-1.3-1.3.png" alt="">
+                        <img src="2-Surfaces/alpha-1.3-12.png" alt="">
+                        <img src="2-Surfaces/alpha-12-1.3.png" alt="">
+                        <img src="2-Surfaces/alpha-12-12.png" alt="">
+                    </div>
 
                 </details>
+                <h3 id="KNN-">3-KNN</h3>
+                <h4 id="RR">Point Source without Quantum Efficiency (rough EJ and VK --- 12 SigmaAlpha)</h4>
+                <details>
+                    <div>
+                        <img src="2-Surfaces/alpha-1.3-1.3.png" alt="">
+                        <img src="2-Surfaces/alpha-1.3-12.png" alt="">
+                        <img src="2-Surfaces/alpha-12-1.3.png" alt="">
+                        <img src="2-Surfaces/alpha-12-12.png" alt="">
+                    </div>
+
+                </details>
+                <h4 id="SS">Point Source without Quantum Efficiency (smooth EJ and VK --- 1.3 SigmaAlpha)</h4>
+                <h4 id="PSQE0">Point Source with Quantum Efficiency / PDE</h4>
             </div>
         </div>
 
