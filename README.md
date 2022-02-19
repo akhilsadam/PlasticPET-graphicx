@@ -15,7 +15,7 @@
 
 - EJ208 & SiPM Response
 
-![](0-CrossSection/EJ208.png) ![](0-CrossSection/SiPM.png)
+![](0-CrossSection/EJ208.png) ![](0-CrossSection/SiPM.jpg)
 
 - Geant4 Implementation of Polyvinyltoulene (PVT) against NIST standards:  
 
@@ -41,9 +41,14 @@
 
 - VK_sigmaalpha = 0.0001, EJ_sigmaalpha = `[0.0001,1.3deg,4deg,6deg,8deg,12deg,30deg]` respectively. All with 200 events. Note EJ208 is set at 100% reflectivity specially for these tests! VK reflectivity is as measured.  
 
-![](2-Surfaces/EJVK-0.0001.png) ![](2-Surfaces/EJVK-1.3-0.0001.png) ![](2-Surfaces/EJVK-4-0.0001.png) 
+<details>
+<summary>Images</summary>
 
-![](2-Surfaces/EJVK-6-0.0001.png) ![](2-Surfaces/EJVK-8-0.0001.png) ![](2-Surfaces/EJVK-12-0.0001.png)  
+![](2-Surfaces/EJVK-0.0001.png) ![](2-Surfaces/EJVK-1.3-0.0001.png) 
+
+![](2-Surfaces/EJVK-4-0.0001.png) ![](2-Surfaces/EJVK-6-0.0001.png) 
+
+![](2-Surfaces/EJVK-8-0.0001.png) ![](2-Surfaces/EJVK-12-0.0001.png)  
 
 ![](2-Surfaces/EJVK-30-0.0001.png)  
 
@@ -51,6 +56,7 @@
 
 ![](2-Surfaces/EJVK-1.3.png) ![](2-Surfaces/EJVK-12.png)  
 
+</details>
 
 
 
