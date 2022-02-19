@@ -5,7 +5,7 @@
 - Some images are hidden by a dropdown, since they are not directly relevant, but are needed to show full progression.  
 
 <a href="https://github.com/akhilsadam/PlasticPET-graphicx/archive/refs/heads/main.zip">Download as ZIP</a>
-
+<link type="text/css" rel="stylesheet" href="/styles.css" />
 
 ## SETUP
 
@@ -46,11 +46,17 @@
 <details>
 <summary>Images</summary>
 
-![](2-Surfaces/EJVK-0.0001.png) ![](2-Surfaces/EJVK-1.3-0.0001.png)  
+![](2-Surfaces/EJVK-0.0001.png)
 
-![](2-Surfaces/EJVK-4-0.0001.png) ![](2-Surfaces/EJVK-6-0.0001.png)  
+![](2-Surfaces/EJVK-1.3-0.0001.png)  
 
-![](2-Surfaces/EJVK-8-0.0001.png) ![](2-Surfaces/EJVK-12-0.0001.png)   
+![](2-Surfaces/EJVK-4-0.0001.png)
+
+![](2-Surfaces/EJVK-6-0.0001.png)  
+
+![](2-Surfaces/EJVK-8-0.0001.png)
+
+![](2-Surfaces/EJVK-12-0.0001.png)   
 
 ![](2-Surfaces/EJVK-30-0.0001.png)   
 
@@ -61,7 +67,9 @@
 <details>
 <summary>Images</summary>
 
-![](2-Surfaces/EJVK-1.3.png) ![](2-Surfaces/EJVK-12.png)  
+![](2-Surfaces/EJVK-1.3.png)
+
+![](2-Surfaces/EJVK-12.png)  
 
 </details>
 
