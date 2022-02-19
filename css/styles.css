@@ -81,15 +81,18 @@ header .nav-wrapper a {
     margin: 0!important;
 }
 
+details{
+text-align: center;
+}
+
 .home-template .card {
-    width: 830px;
+    width: 80vw;
     max-width: 93%;
     height: fit-content;
     margin: 20px auto;
     padding: 10px;
     /* background: var(--mashiro);
     box-shadow: 0 0 5px var(--rurikon-alph); */
-    text-align: center;
 }
 
 @media(max-width:800px) {
