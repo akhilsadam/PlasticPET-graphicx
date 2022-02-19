@@ -27,39 +27,43 @@
                 <h3 id="cross-section-material-definition">Cross-Section &amp; Material Definition</h3>
                 <ul>
                     <li>EJ208 &amp; SiPM Response</li>
-                </ul>
-                <p><img src="0-CrossSection/EJ208.png" alt=""> <img src="0-CrossSection/SiPM.jpg" alt=""></p>
+                </ul><br>
+                <p><img src="0-CrossSection/EJ208.png" alt=""> <img src="0-CrossSection/SiPM.jpg" alt=""></p><br>
                 <ul>
                     <li>Geant4 Implementation of Polyvinyltoulene (PVT) against NIST standards: </li>
                 </ul>
-                <p><img src="0-CrossSection/PVT_G4_VS_NIST_CS.png" alt=""> <img src="0-CrossSection/PVT_G4_VS_NIST_L.png" alt=""> </p>
+                <br>
+                <p><img src="0-CrossSection/PVT_G4_VS_NIST_CS.png" alt=""> <img src="0-CrossSection/PVT_G4_VS_NIST_L.png" alt=""> </p><br>
                 <ul>
                     <li>Geant4 Implementation of EJ208 (addition of Pb) against NIST standards: </li>
                 </ul>
-                <p><img src="0-CrossSection/PVT_G4_W_Pb_CS.png" alt=""> <img src="0-CrossSection/PVT_G4_W_Pb_L.png" alt=""> </p>
+                <br>
+                <p><img src="0-CrossSection/PVT_G4_W_Pb_CS.png" alt=""> <img src="0-CrossSection/PVT_G4_W_Pb_L.png" alt=""> </p><br>
                 <h3 id="primitives">Primitives</h3>
                 <ul>
                     <li>Example Creation/Production &amp; Detection Plots; to motivate looking at sum histograms.</li>
                 </ul>
-                <p><img src="1-Primitives/Creation.png" alt=""> <img src="1-Primitives/Detection.png" alt=""> </p>
+                <br>
+                <p><img src="1-Primitives/Creation.png" alt=""> <img src="1-Primitives/Detection.png" alt=""> </p><br>
                 <h3 id="surface-treatment-">Surface Treatment*</h3>
                 <h4 id="light-yield-across-varying-plastic-roughness-motivate-using-polished-crystal">Light Yield across Varying Plastic Roughness | Motivate using Polished Crystal</h4>
                 <ul>
                     <li>VK_sigmaalpha = 12 degrees, EJ_sigmaalpha = <code>[2deg, 12deg]</code> respectively. These values are from a previous G4 paper that used them to discriminate between rough and polished surfaces.</li>
                 </ul>
-                <p><img src="2-Surfaces/EJVK-2-12.png" alt=""> <img src="2-Surfaces/EJVK-12-12.png" alt=""> </p>
+                <br>
+                <p><img src="2-Surfaces/EJVK-2-12.png" alt=""> <img src="2-Surfaces/EJVK-12-12.png" alt=""> </p><br>
                 <ul>
-                    <li>VK_sigmaalpha = 0.0001, EJ_sigmaalpha = <code>[0.0001,1.3deg,4deg,6deg,8deg,12deg,30deg]</code> respectively. All with 200 events. Note EJ208 is set at 100% reflectivity specially for these tests! VK reflectivity is as measured. </li>
+                    <li>VK_sigmaalpha = 0.0001, EJ_sigmaalpha = <code>[0.0001,1.3deg,4deg,6deg,8deg,12deg,30deg]</code> respectively. All with 200 events. </li>
                 </ul>
                 <details>
                     <summary>Images</summary><br>
 
                     <img src="2-Surfaces/EJVK-0.0001.png" alt="">
-                    <img src="2-Surfaces/EJVK-1.3-0.0001.png" alt=""><br>
+                    <img src="2-Surfaces/EJVK-1.3-0.0001.png" alt="">
                     <img src="2-Surfaces/EJVK-4-0.0001.png" alt="">
-                    <img src="2-Surfaces/EJVK-6-0.0001.png" alt=""><br>
+                    <img src="2-Surfaces/EJVK-6-0.0001.png" alt="">
                     <img src="2-Surfaces/EJVK-8-0.0001.png" alt="">
-                    <img src="2-Surfaces/EJVK-12-0.0001.png" alt=""><br>
+                    <img src="2-Surfaces/EJVK-12-0.0001.png" alt="">
                     <img src="2-Surfaces/EJVK-30-0.0001.png" alt=""><br>
 
                 </details>
@@ -78,11 +82,18 @@
 
                 <h4 id="reflection-suite">Reflection Suite</h4>
                 <details>
-                    <summary>Images</summary>
+                    <summary>Details</summary>
 
+                    <li>Boundary Interactions (EJ_sigmaalpha,VK_sigmaalpha,EJ_reflectivity) = <code>[(2,-,0.95),(12,-,0.95),(2,12,0.95),(12,12,0.95),(2,12,1),(12,12,1)]</code>deg, respectively. Dash implies no VK. Note EJ208 is expected to have 100% *G4 reflectivity*
+                        unless there is surface dirt! </li>
 
-
-                    # TODO
+                    <img src="2-Surfaces/AEJ-2.png" alt="">
+                    <img src="2-Surfaces/AEJ-12.png" alt="">
+                    <img src="2-Surfaces/AEJVK-2-12.png" alt="">
+                    <img src="2-Surfaces/AEJVK-12-12.png" alt="">
+                    <img src="2-Surfaces/IAEJVK-2-12.png" alt="">
+                    <img src="2-Surfaces/IAEJVK-12-12.png" alt="">
+                    <br>
 
 
 
