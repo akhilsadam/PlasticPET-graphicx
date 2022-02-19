@@ -95,6 +95,10 @@ details {
     text-align: center;
 }
 
+li {
+    text-align: left;
+}
+
 .home-template .card {
     width: 80vw;
     max-width: 93%;
