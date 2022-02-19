@@ -1,9 +1,12 @@
 * {
     font-variant-ligatures: none;
 }
-img{
-max-width: 25%;
-width : 25%;
+
+img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
 
 :root {
@@ -81,8 +84,8 @@ header .nav-wrapper a {
     margin: 0!important;
 }
 
-details{
-text-align: center;
+details {
+    text-align: center;
 }
 
 .home-template .card {
