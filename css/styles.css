@@ -2,11 +2,18 @@
     font-variant-ligatures: none;
 }
 
-img {
-    float: left;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+p {
+    float: left !important;
+    width: 100px !important;
+    height: 100px !important;
+    object-fit: cover !important;
+}
+
+p:hover {
+    float: left !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
 }
 
 :root {
