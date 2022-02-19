@@ -5,16 +5,13 @@
 img,
 .img {
     float: left !important;
-    width: 100px !important;
-    height: 100px !important;
+    max-width: 100px !important;
     object-fit: cover !important;
 }
 
 img:hover,
 .img:hover {
     float: left !important;
-    width: 100% !important;
-    height: 100% !important;
     object-fit: cover !important;
 }
 
