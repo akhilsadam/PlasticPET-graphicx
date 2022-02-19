@@ -2,9 +2,9 @@
 
 - *Some plots have very poor statistics, but I haven't yet had a chance to regenerate them... 
 - If you would like to use those, please tell me, and I will generate them ASAP (will take a day or two, since simulation is fairly slow).
-- Some images are hidden by a dropdown, since they are not directly relevant, but are needed to show full progression.
+- Some images are hidden by a dropdown, since they are not directly relevant, but are needed to show full progression.  
 
-<a href=https://github.com/akhilsadam/PlasticPET-graphicx/archive/refs/heads/main.zip>Download as ZIP</a>
+<a href="https://github.com/akhilsadam/PlasticPET-graphicx/archive/refs/heads/main.zip">Download as ZIP</a>
 
 
 ## SETUP
