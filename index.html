@@ -30,7 +30,7 @@
                     <li>I am assuming Mr. Proga has supplied this to satisfaction... </li>
                 </ul>
                 <h3 id="cross-section-material-definition">0-Cross-Section &amp; Material Definition</h3>
-                <details>
+                <details open>
                     <summary>Details</summary>
                     <ul>
                         <li>EJ208 &amp; SiPM Response</li>
@@ -52,7 +52,7 @@
                     </div>
                 </details>
                 <h3 id="primitives">1-Primitives</h3>
-                <details>
+                <details open>
                     <summary>Details</summary>
                     <ul>
                         <li>Example Creation/Production &amp; Detection Plots; to motivate looking at sum histograms.</li>
@@ -63,7 +63,7 @@
                 </details>
                 <h3 id="surface-treatment-">2-Surface Treatment (*)</h3>
                 <h4 id="light-yield-across-varying-plastic-roughness-motivate-using-polished-crystal">Light Yield across Varying Plastic Roughness | Motivate using Polished Crystal</h4>
-                <details>
+                <details open>
                     <summary>Details</summary>
                     <ul>
                         <li>VK_sigmaalpha = 12 degrees, EJ_sigmaalpha = <code>[2deg, 12deg]</code> respectively. These values are from a previous G4 paper that used them to discriminate between rough and polished surfaces.</li>
@@ -95,7 +95,7 @@
                 </details>
 
                 <h4 id="reflection-suite">Reflection Suite</h4>
-                <details>
+                <details open>
                     <summary>Details</summary>
 
                     <li>Boundary Interactions (EJ_sigmaalpha,VK_sigmaalpha,EJ_reflectivity) = <code>[(2,-,0.95),(12,-,0.95),(2,12,0.95),(12,12,0.95),(2,12,1),(12,12,1)]</code>deg, respectively. Dash implies no VK. Note EJ208 is expected to have 100% *G4 reflectivity*
@@ -132,8 +132,7 @@
                         <img src="2-Surfaces/SAS-5.jpg" alt="">
                     </div>
 
-                    <li>Travel Protocol : number of surface interactions vs boundary time.</li>
-                    <li>SigmaAlpha is varied : <code>(EJ,VK) = [(1.3,1.3),(1.3,12),(12,1.3),(12,12)].</code></li>
+                    <li>Travel Protocol : number of surface interactions vs boundary time. SigmaAlpha is varied : <code>(EJ,VK) = [(1.3,1.3),(1.3,12),(12,1.3),(12,12)].</code></li>
                     <div>
                         <img src="2-Surfaces/alpha-1.3-1.3.png" alt="">
                         <img src="2-Surfaces/alpha-1.3-12.png" alt="">
@@ -145,7 +144,7 @@
                 <h3 id="KNN-">3-KNN</h3>
                 <li>Note Time of Flight error is sqrt(2)*KNN Time error, as the KNN operates on single Arrays, and is for single gammas.</li>
                 <h4 id="Valid">Validation</h4>
-                <details>
+                <details open>
                     <summary>Details</summary>
                     <li>KNN to predict gamma interaction position from photon #5-10 (by detection) on either side of the scintillator array.</li>
                     <li>First we have a PCA transformation, then a Mahalonobis transformation, then a test for the optimal k, and then a output-space visualization</li>
@@ -158,7 +157,7 @@
                     </div>
                 </details>
                 <h4 id="RR">Point Source without Quantum Efficiency (rough EJ and VK --- 12 SigmaAlpha)</h4>
-                <details>
+                <details open>
                     <summary>Details</summary>
                     <li>The histogram is a light-yield histogram binned by z-position (axial).</li>
                     <li>The right reconstruction has been NLM (non-local-means) filtered.</li>
@@ -173,7 +172,7 @@
                     </div>
                 </details>
                 <h4 id="SS">Point Source without Quantum Efficiency (smooth EJ and VK --- 1.3 SigmaAlpha)</h4>
-                <details>
+                <details open>
                     <summary>Details</summary>
                     <li>The histogram is a light-yield histogram binned by z-position (axial).</li>
                     <li>The right reconstruction has been NLM (non-local-means) filtered.</li>
@@ -206,7 +205,7 @@
                     </div>
                 </details>
                 <h3 id="Test-">4-Gamma Only Simulation (Test in <code>Python</code>)</h3>
-                <details>
+                <details open>
                     <summary>Details</summary>
                     <li>Direct generation and reconstruction of gamma.</li>
                     <li>First we have the full render, then gamma interaction positions, then the lines of response and lines of response center points.</li>
@@ -217,7 +216,7 @@
                     </div>
                 </details>
                 <h3 id="Phantom-">5-Phantoms</h3>
-                <details>
+                <details open>
                     <summary>Details</summary>
                     <li>ICRP110 Phantom.</li>
                     <li>Radiation from brain (light-yield in singles, then paired gammas), then from bloodstream (light-yield only in paired gammas).</li>
@@ -229,7 +228,7 @@
                     </div>
                 </details>
                 <h3 id="Point-">6-Point Source Reconstruction (Spatial Resolution & Sensitivity)</h3>
-                <details>
+                <details open>
                     <summary>Details</summary>
                     <li>Still debugging a TOF bug that prevents results here.</li>
                     <li>First we will show two truth-renderings for a central point source(which also have the TOF bug), and then those of an inaccurate reconstruction.</li>
