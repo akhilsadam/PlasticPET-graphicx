@@ -61,12 +61,12 @@ html {
     padding: 0;
     top: 0px;
     left: 0px;
-    position: fixed;
+    position: absolute;
     width: 100vw;
     height: 100vh;
     background-attachment: fixed;
     background-position: 50% 50%;
-    background-size: 200% 200%;
+    background-size: cover;
     z-index: -100;
     background: url("/PlasticPET-graphicx/css/bkg.jpg");
     border: none;
