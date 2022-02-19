@@ -2,6 +2,10 @@
     font-variant-ligatures: none;
 }
 
+img{
+    width: 25%;
+}
+
 :root {
     --kotoba: Kiona, Aron Grotesque Light, Montserrat Regular;
     --aijiro: rgba(235, 246, 247, 1);
