@@ -5,7 +5,7 @@
 - Some images are hidden by a dropdown, since they are not directly relevant, but are needed to show full progression.  
 
 <a href="https://github.com/akhilsadam/PlasticPET-graphicx/archive/refs/heads/main.zip">Download as ZIP</a>
-<link type="text/css" rel="stylesheet" href="/styles.css" />
+<link type="text/css" rel="stylesheet" href="https://raw.githubusercontent.com/akhilsadam/PlasticPET-graphicx/gh-pages/styles.css"/>
 
 ## SETUP
 
