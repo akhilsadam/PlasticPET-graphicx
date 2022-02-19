@@ -51,12 +51,13 @@ html {
     height: 100%!important;
     margin: 0;
     padding: 0;
-    background: transparent !important;
+    background: var(--hakushi);
     /*#e7ecf7!important;*/
     font-family: var(--kotoba);
 }
 
-.bkg {
+
+/* .bkg {
     margin: 0;
     padding: 0;
     top: 0px;
@@ -73,7 +74,7 @@ html {
 
 .bkg {
     margin: 0 auto;
-}
+} */
 
 .row .col {
     padding: 0!important;
