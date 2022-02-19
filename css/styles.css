@@ -69,7 +69,7 @@ html {
     z-index: -100;
     background: url("/PlasticPET-graphicx/css/bkg.jpg");
     border: none;
-    filter: brightness(0.5) contrast(2) invert(1) hue-rotate(-30deg) blur(5px);
+    filter: brightness(0.3) contrast(2) invert(1) hue-rotate(-30deg) blur(10px);
 }
 
 .bkg {
