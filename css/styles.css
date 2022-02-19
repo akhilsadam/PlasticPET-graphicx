@@ -43,6 +43,7 @@ img:hover {
     --ginshu: rgb(188, 45, 41);
     --enji-iro: rgb(157, 41, 51);
     --azuki-iro: rgb(103, 36, 34);
+    background: transparent;
 }
 
 body,
